@@ -33,8 +33,7 @@ export default function Leadership() {
                     className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full h-40 bg-slate-800 flex items-center justify-center text-slate-600">
-                            <span className="material-symbols-outlined text-4xl">image</span>
+                        <div className="w-full h-40 bg-slate-800 flex items-center justify-center text-slate-600 bg-cover bg-center" style={{ backgroundImage: "url('/leadership-1.jpg')" }}>
                         </div>
                         <div className="p-8 pt-6">
                             <div className="w-12 h-12 bg-yellow-500/10 rounded-full flex items-center justify-center mb-6 text-google-yellow">
@@ -51,8 +50,7 @@ export default function Leadership() {
                     </motion.div>
 
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full h-40 bg-slate-800 flex items-center justify-center text-slate-600">
-                            <span className="material-symbols-outlined text-4xl">image</span>
+                        <div className="w-full h-40 bg-slate-800 flex items-center justify-center text-slate-600 bg-cover bg-center" style={{ backgroundImage: "url('/leadership-2.jpg')" }}>
                         </div>
                         <div className="p-8 pt-6">
                             <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mb-6 text-google-blue">
@@ -68,8 +66,7 @@ export default function Leadership() {
                     </motion.div>
 
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full h-40 bg-slate-800 flex items-center justify-center text-slate-600">
-                            <span className="material-symbols-outlined text-4xl">image</span>
+                        <div className="w-full h-40 bg-slate-800 flex items-center justify-center text-slate-600 bg-cover bg-center" style={{ backgroundImage: "url('/leadership-3.jpg')" }}>
                         </div>
                         <div className="p-8 pt-6">
                             <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mb-6 text-google-green">
