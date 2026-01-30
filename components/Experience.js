@@ -33,7 +33,7 @@ export default function Experience() {
                 >
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
                         <div className="h-48 rounded-xl bg-slate-100 dark:bg-slate-800 mb-6 flex items-center justify-center overflow-hidden relative">
-                            <img src="/ecosystem-image.png" alt="AI Ecosystem" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                            <img src="/ecosystem-image.png" alt="AI Ecosystem" className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-3">
@@ -52,7 +52,7 @@ export default function Experience() {
                     </motion.div>
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
                         <div className="h-48 rounded-xl bg-slate-100 dark:bg-slate-800 mb-6 flex items-center justify-center overflow-hidden relative">
-                            <img src="/workflow-image.png" alt="AI Workflow Design" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                            <img src="/workflow-image.png" alt="AI Workflow Design" className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-3">
@@ -72,7 +72,7 @@ export default function Experience() {
                     </motion.div>
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full lg:col-span-1 md:col-span-2 hover:-translate-y-2 duration-300">
                         <div className="h-48 rounded-xl bg-slate-100 dark:bg-slate-800 mb-6 flex items-center justify-center overflow-hidden relative">
-                            <img src="/growth-chart.png" alt="AI Growth Chart" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                            <img src="/growth-chart.png" alt="AI Growth Chart" className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-3">
