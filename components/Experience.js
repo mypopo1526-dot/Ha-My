@@ -31,7 +31,7 @@ export default function Experience() {
                     viewport={{ once: true }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                 >
-                    <motion.div variants={item} className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 flex flex-col h-full hover:-translate-y-2 duration-300">
+                    <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
                         <div className="h-48 rounded-xl bg-gradient-to-br from-blue-100 to-indigo-50 dark:from-blue-900/40 dark:to-indigo-900/40 mb-6 flex items-center justify-center overflow-hidden relative">
                             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#4285F4 1px, transparent 1px)", backgroundSize: "16px 16px" }}></div>
                             <span className="material-symbols-outlined text-6xl text-google-blue group-hover:rotate-12 transition-transform duration-500">auto_awesome</span>
@@ -47,7 +47,7 @@ export default function Experience() {
                                 – Đồng phát triển ý tưởng dự án cùng AI (AI-assisted ideation)</p>
                         </div>
                     </motion.div>
-                    <motion.div variants={item} className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 flex flex-col h-full hover:-translate-y-2 duration-300">
+                    <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
                         <div className="h-48 rounded-xl bg-gradient-to-br from-purple-100 to-fuchsia-50 dark:from-purple-900/40 dark:to-fuchsia-900/40 mb-6 flex items-center justify-center overflow-hidden relative">
                             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#A142F4 1px, transparent 1px)", backgroundSize: "16px 16px" }}></div>
                             <span className="material-symbols-outlined text-6xl text-purple-600 group-hover:scale-110 transition-transform duration-500">code_blocks</span>
