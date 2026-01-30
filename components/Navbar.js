@@ -30,8 +30,8 @@ export default function Navbar() {
         <nav className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md border-[#e7ecf4]" : "bg-white border-transparent"}`}>
             <div className="px-4 md:px-10 py-3 flex items-center justify-between max-w-[1200px] mx-auto">
                 <div className="flex items-center gap-2 md:gap-4 text-[#0d131c]">
-                    <div className="size-8 flex items-center justify-center bg-white rounded-full">
-                        <span className="material-symbols-outlined text-google-blue text-3xl">smart_toy</span>
+                    <div className="size-10 flex items-center justify-center rounded-full overflow-hidden border border-slate-200">
+                        <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
                     </div>
                     <h2 className="text-[#0d131c] text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Pham Ha My</h2>
                 </div>
