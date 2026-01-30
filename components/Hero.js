@@ -35,19 +35,7 @@ export default function Hero() {
                         Em tin rằng công nghệ chỉ thực sự có ý nghĩa khi được con người hiểu, sử dụng và cùng nhau tạo ra giá trị tích cực cho cộng đồng.
                     </motion.h2>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex gap-4 justify-center md:justify-start pt-2"
-                    >
-                        <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-google-blue text-white text-base font-bold shadow-soft hover:bg-blue-600 transition-all">
-                            Xem Portfolio
-                        </button>
-                        <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-base font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
-                            Tải CV
-                        </button>
-                    </motion.div>
+
                 </div>
 
                 <motion.div
