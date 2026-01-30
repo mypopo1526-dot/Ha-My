@@ -1,9 +1,11 @@
+```javascript
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
 
 export default function Education() {
-    const [popupImage, setPopupImage] = React.useState(null);
+    const [showNeu, setShowNeu] = React.useState(false);
+    const [showUeh, setShowUeh] = React.useState(false);
 
     return (
         <section className="w-full max-w-[960px] mx-auto px-4 md:px-10 py-16 scroll-mt-20" id="education">
@@ -34,22 +36,42 @@ export default function Education() {
                         <p className="text-slate-500 dark:text-slate-400 font-medium">Hà Nội</p>
                         <p className="text-slate-600 dark:text-slate-300 mt-2 text-sm leading-relaxed">NEU là môi trường nền tảng hình thành tư duy học thuật và định hướng phát triển. Những trải nghiệm học tập và hoạt động sinh viên tại đây đã mở rộng kết nối, đồng thời nuôi dưỡng tinh thần tạo giá trị cho cộng đồng sinh viên.</p>
                     </motion.div>
-                    <div
-                        onClick={() => setPopupImage('/neu.jpg')}
-                        className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-800 border-4 border-google-blue flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition-transform cursor-pointer hover:bg-blue-50"
+                    <div 
+                        onClick={() => setShowNeu(!showNeu)}
+                        className={`absolute left - 8 md: left - 1 / 2 transform - translate - x - 1 / 2 w - 10 h - 10 rounded - full bg - white dark: bg - slate - 800 border - 4 border - google - blue flex items - center justify - center z - 10 shadow - sm transition - all cursor - pointer ${ showNeu ? 'scale-110 bg-blue-50' : 'group-hover:scale-110' } `}
                     >
-                        <span className="material-symbols-outlined text-google-blue text-sm">north</span>
+                        <span className="material-symbols-outlined text-google-blue text-sm">{showNeu ? "close" : "north"}</span>
                     </div>
-                    <div className="md:w-[45%] hidden md:block"></div>
+                    <div className="md:w-[45%] pl-12 md:pl-0 mt-4 md:mt-0">
+                        {showNeu && (
+                            <motion.img 
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                src="/neu.jpg" 
+                                alt="NEU" 
+                                className="w-full rounded-xl shadow-lg object-cover aspect-video"
+                            />
+                        )}
+                    </div>
                 </div>
 
                 <div className="relative flex flex-col md:flex-row items-center justify-between group">
-                    <div className="md:w-[45%] hidden md:block"></div>
-                    <div
-                        onClick={() => setPopupImage('/ueh.jpg')}
-                        className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-800 border-4 border-google-green flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition-transform cursor-pointer hover:bg-green-50"
+                    <div className="md:w-[45%] pl-12 md:pl-0 mb-4 md:mb-0 text-right md:text-left">
+                        {showUeh && (
+                            <motion.img 
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                src="/ueh.jpg" 
+                                alt="UEH" 
+                                className="w-full rounded-xl shadow-lg object-cover aspect-video"
+                            />
+                        )}
+                    </div>
+                    <div 
+                        onClick={() => setShowUeh(!showUeh)}
+                        className={`absolute left - 8 md: left - 1 / 2 transform - translate - x - 1 / 2 w - 10 h - 10 rounded - full bg - white dark: bg - slate - 800 border - 4 border - google - green flex items - center justify - center z - 10 shadow - sm transition - all cursor - pointer ${ showUeh ? 'scale-110 bg-green-50' : 'group-hover:scale-110' } `}
                     >
-                        <span className="material-symbols-outlined text-google-green text-sm">south</span>
+                        <span className="material-symbols-outlined text-google-green text-sm">{showUeh ? "close" : "south"}</span>
                     </div>
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
@@ -64,30 +86,6 @@ export default function Education() {
                     </motion.div>
                 </div>
             </div>
-
-            {/* Image Modal */}
-            {popupImage && (
-                <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
-                    onClick={() => setPopupImage(null)}
-                >
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.9 }}
-                        className="relative max-w-4xl max-h-[90vh] rounded-2xl overflow-hidden"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <img src={popupImage} alt="Education Detail" className="w-full h-full object-contain" />
-                        <button
-                            onClick={() => setPopupImage(null)}
-                            className="absolute top-4 right-4 w-10 h-10 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-colors"
-                        >
-                            <span className="material-symbols-outlined">close</span>
-                        </button>
-                    </motion.div>
-                </div>
-            )}
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
