@@ -22,7 +22,7 @@ export default function Leadership() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
                 <div>
                     <h2 className="text-3xl title-gradient mb-2">HOẠT ĐỘNG NGOẠI KHOÁ</h2>
-                    <p className="text-slate-600">Dấu ấn tại các tổ chức sinh viên</p>
+                    <p className="text-slate-600 dark:text-slate-400">Dấu ấn tại các tổ chức sinh viên</p>
                 </div>
                 <div className="h-1 w-20 bg-google-yellow rounded-full hidden md:block"></div>
             </div>
@@ -38,10 +38,10 @@ export default function Leadership() {
                         <span className="material-symbols-outlined text-4xl">image</span>
                     </div>
                     <div className="p-8 pt-6">
-                        <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-google-yellow">
+                        <div className="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center mb-6 text-google-yellow">
                             <span className="material-symbols-outlined text-2xl">gavel</span>
                         </div>
-                        <h3 className="text-xl font-bold text-[#0d131c] mb-2">Bí thư Lớp BBAE-K66B</h3>
+                        <h3 className="text-xl font-bold text-[#0d131c] dark:text-white mb-2">Bí thư Lớp BBAE-K66B</h3>
                         <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wide">Đại học Kinh tế Quốc dân</p>
                         <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
                             – Là cầu nối giữa sinh viên – giảng viên – nhà trường;
@@ -56,10 +56,10 @@ export default function Leadership() {
                         <span className="material-symbols-outlined text-4xl">image</span>
                     </div>
                     <div className="p-8 pt-6">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-google-blue">
+                        <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6 text-google-blue">
                             <span className="material-symbols-outlined text-2xl">groups</span>
                         </div>
-                        <h3 className="text-xl font-bold text-[#0d131c] mb-2">Ban Chuyên Môn YEC-NEU</h3>
+                        <h3 className="text-xl font-bold text-[#0d131c] dark:text-white mb-2">Ban Chuyên Môn YEC-NEU</h3>
                         <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wide">CLB Nhà Kinh Tế Trẻ</p>
                         <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
                             – Tham gia xây dựng nội dung học thuật, chia sẻ đến cộng đồng sinh viên;
@@ -73,10 +73,10 @@ export default function Leadership() {
                         <span className="material-symbols-outlined text-4xl">image</span>
                     </div>
                     <div className="p-8 pt-6">
-                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-6 text-google-green">
+                        <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-6 text-google-green">
                             <span className="material-symbols-outlined text-2xl">event_available</span>
                         </div>
-                        <h3 className="text-xl font-bold text-[#0d131c] mb-2">BTC Cool Summer 2025</h3>
+                        <h3 className="text-xl font-bold text-[#0d131c] dark:text-white mb-2">BTC Cool Summer 2025</h3>
                         <p className="text-sm text-slate-500 font-medium mb-4 uppercase tracking-wide">Ban Nội Dung</p>
                         <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">
                             – Xây dựng concept và khung chương trình sự kiện;

@@ -20,7 +20,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-[#0d131c] text-4xl md:text-5xl lg:text-6xl font-black leading-[1.15] tracking-tight"
+                        className="text-[#0d131c] dark:text-white text-4xl md:text-5xl lg:text-6xl font-black leading-[1.15] tracking-tight"
                     >
                         Biến việc học thành <br className="hidden lg:block" />
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-google-blue via-google-green via-google-yellow to-google-red">giá trị được sẻ chia</span>
@@ -30,7 +30,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-slate-600 text-base md:text-lg font-normal leading-relaxed max-w-2xl"
+                        className="text-slate-600 dark:text-slate-300 text-base md:text-lg font-normal leading-relaxed max-w-2xl"
                     >
                         Em tin rằng công nghệ chỉ thực sự có ý nghĩa khi được con người hiểu, sử dụng và cùng nhau tạo ra giá trị tích cực cho cộng đồng.
                     </motion.h2>
@@ -44,7 +44,7 @@ export default function Hero() {
                         <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-google-blue text-white text-base font-bold shadow-soft hover:bg-blue-600 transition-all">
                             Xem Portfolio
                         </button>
-                        <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-white text-slate-700 border border-slate-200 text-base font-medium hover:bg-slate-50 transition-all">
+                        <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-base font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
                             Tải CV
                         </button>
                     </motion.div>

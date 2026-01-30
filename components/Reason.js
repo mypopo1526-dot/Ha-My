@@ -8,8 +8,7 @@ export default function Reason() {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ type: "spring", stiffness: 200, damping: 10 }}
-                viewport={{ once: true }}
-                className="material-symbols-outlined text-6xl text-slate-200 mb-6 group-hover:text-google-blue transition-colors block"
+                className="material-symbols-outlined text-6xl text-slate-200 dark:text-slate-700 mb-6 group-hover:text-google-blue transition-colors block"
             >
                 format_quote
             </motion.span>
@@ -31,7 +30,7 @@ export default function Reason() {
                 transition={{ duration: 1, delay: 0.2 }}
                 className="space-y-6"
             >
-                <p className="text-slate-600 text-lg leading-relaxed text-center">
+                <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed text-center">
                     Google không chỉ tiên phong về công nghệ mà còn dẫn dắt văn hoá sẻ chia và trao quyền. Là một GSA, em khao khát mang tư duy <span className="text-google-blue font-bold">“AI First”</span> nhưng <span class="text-google-red font-bold">“People Centric”</span> đến với cộng đồng sinh viên Việt Nam. Em đã sẵn sàng trở thành người kết nối, khơi gợi và dẫn dắt để nhiều sinh viên dám thử, dám sáng tạo và dám bước lên vai trò lãnh đạo trong kỷ nguyên AI.
                 </p>
             </motion.div>
@@ -46,6 +45,6 @@ export default function Reason() {
                     />
                 ))}
             </div>
-        </section>
+        </section >
     );
 }
