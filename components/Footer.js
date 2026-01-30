@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="max-w-[1200px] mx-auto px-4 md:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-slate-400">mail</span>
-                    <span className="text-[#0d131c] dark:text-slate-200 font-medium">Contact:</span>
+                    <a className="text-[#0d131c] dark:text-slate-200 font-medium hover:text-google-blue transition-colors" href="mailto:contact@phamhamy.com">Contact</a>
                 </div>
                 <div className="flex gap-6">
                     <a className="text-slate-500 dark:text-slate-400 hover:text-[#0d131c] dark:hover:text-white transition-colors font-medium text-sm hover:-translate-y-0.5 transform display-inline-block" href="#">LinkedIn</a>
