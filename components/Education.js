@@ -1,6 +1,6 @@
 ```javascript
 "use client";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 
 export default function Education() {
@@ -24,6 +24,7 @@ export default function Education() {
                     className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700 transform -translate-x-1/2 origin-top"
                 />
 
+                {/* NEU Section */}
                 <div className="relative flex flex-col md:flex-row items-center justify-between mb-12 group">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -36,43 +37,56 @@ export default function Education() {
                         <p className="text-slate-500 dark:text-slate-400 font-medium">Hà Nội</p>
                         <p className="text-slate-600 dark:text-slate-300 mt-2 text-sm leading-relaxed">NEU là môi trường nền tảng hình thành tư duy học thuật và định hướng phát triển. Những trải nghiệm học tập và hoạt động sinh viên tại đây đã mở rộng kết nối, đồng thời nuôi dưỡng tinh thần tạo giá trị cho cộng đồng sinh viên.</p>
                     </motion.div>
+                    
                     <div 
                         onClick={() => setShowNeu(!showNeu)}
                         className={`absolute left - 8 md: left - 1 / 2 transform - translate - x - 1 / 2 w - 10 h - 10 rounded - full bg - white dark: bg - slate - 800 border - 4 border - google - blue flex items - center justify - center z - 10 shadow - sm transition - all cursor - pointer ${ showNeu ? 'scale-110 bg-blue-50' : 'group-hover:scale-110' } `}
                     >
                         <span className="material-symbols-outlined text-google-blue text-sm">{showNeu ? "close" : "north"}</span>
                     </div>
-                    <div className="md:w-[45%] pl-12 md:pl-0 mt-4 md:mt-0">
-                        {showNeu && (
-                            <motion.img 
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                src="/neu.jpg" 
-                                alt="NEU" 
-                                className="w-full rounded-xl shadow-lg object-cover aspect-video"
-                            />
-                        )}
+
+                    <div className={`md: w - [45 %] pl - 12 md: pl - 0 mt - 4 md: mt - 0 ${ showNeu ? '' : 'hidden md:block' } `}>
+                        <AnimatePresence>
+                            {showNeu && (
+                                <motion.img 
+                                    initial={{ opacity: 0, scale: 0.8, x: -20 }}
+                                    animate={{ opacity: 1, scale: 1, x: 0 }}
+                                    exit={{ opacity: 0, scale: 0.8, x: -20 }}
+                                    transition={{ duration: 0.3 }}
+                                    src="/neu.jpg" 
+                                    alt="NEU" 
+                                    className="w-full rounded-xl shadow-lg object-cover aspect-video"
+                                />
+                            )}
+                        </AnimatePresence>
                     </div>
                 </div>
 
+                {/* UEH Section */}
                 <div className="relative flex flex-col md:flex-row items-center justify-between group">
-                    <div className="md:w-[45%] pl-12 md:pl-0 mb-4 md:mb-0 text-right md:text-left">
-                        {showUeh && (
-                            <motion.img 
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                src="/ueh.jpg" 
-                                alt="UEH" 
-                                className="w-full rounded-xl shadow-lg object-cover aspect-video"
-                            />
-                        )}
+                    <div className={`md: w - [45 %] pl - 12 md: pl - 0 mb - 4 md: mb - 0 text - right md: text - left ${ showUeh ? '' : 'hidden md:block' } `}>
+                        <AnimatePresence>
+                            {showUeh && (
+                                <motion.img 
+                                    initial={{ opacity: 0, scale: 0.8, x: 20 }}
+                                    animate={{ opacity: 1, scale: 1, x: 0 }}
+                                    exit={{ opacity: 0, scale: 0.8, x: 20 }}
+                                    transition={{ duration: 0.3 }}
+                                    src="/ueh.jpg" 
+                                    alt="UEH" 
+                                    className="w-full rounded-xl shadow-lg object-cover aspect-video"
+                                />
+                            )}
+                        </AnimatePresence>
                     </div>
+
                     <div 
                         onClick={() => setShowUeh(!showUeh)}
                         className={`absolute left - 8 md: left - 1 / 2 transform - translate - x - 1 / 2 w - 10 h - 10 rounded - full bg - white dark: bg - slate - 800 border - 4 border - google - green flex items - center justify - center z - 10 shadow - sm transition - all cursor - pointer ${ showUeh ? 'scale-110 bg-green-50' : 'group-hover:scale-110' } `}
                     >
                         <span className="material-symbols-outlined text-google-green text-sm">{showUeh ? "close" : "south"}</span>
                     </div>
+
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
