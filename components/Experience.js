@@ -41,10 +41,14 @@ export default function Experience() {
                                 <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded">AI Ecosystem</span>
                             </div>
                             <h3 className="text-xl font-bold text-[#0d131c] dark:text-white mb-2 group-hover:text-google-blue transition-colors">Apply Google AI Daily</h3>
-                            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-line">Thường xuyên áp dụng hệ sinh thái Google AI (Gemini, NotebookLM, Veo...) trong học tập, nghiên cứu và sáng tạo hằng ngày.
-                                – Tăng tốc nghiên cứu học thuật và xử lý tài liệu phức tạp
-                                – Tổng hợp và kết nối kiến thức từ nhiều nguồn
-                                – Đồng phát triển ý tưởng dự án cùng AI (AI-assisted ideation)</p>
+                            <div className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                <p className="mb-2">Thường xuyên áp dụng hệ sinh thái Google AI (Gemini, NotebookLM, Veo...) trong học tập, nghiên cứu và sáng tạo hằng ngày.</p>
+                                <ul className="space-y-1">
+                                    <li>- Tăng tốc nghiên cứu học thuật và xử lý các tài liệu phức tạp.</li>
+                                    <li>- Tổng hợp và kết nối kiến thức từ nhiều nguồn khác nhau.</li>
+                                    <li>- Đồng phát triển ý tưởng dự án cùng AI theo hướng AI-assisted ideation.</li>
+                                </ul>
+                            </div>
                         </div>
                     </motion.div>
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
@@ -57,11 +61,15 @@ export default function Experience() {
                                 <span className="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded">Workflow</span>
                             </div>
                             <h3 className="text-xl font-bold text-[#0d131c] dark:text-white mb-2 group-hover:text-purple-600 transition-colors">AI Workflow Design</h3>
-                            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-line">Thiết kế và vận hành quy trình làm việc tích hợp AI bằng make2u và Gemini API.
-                                – Xây dựng workflow AI end-to-end
-                                – Ứng dụng prompt engineering theo hướng chiến lược và system-thinking
-                                – Cá nhân hoá AI theo mục tiêu học tập và dự án
-                                – Thiết kế logic tương tác người – AI để tối ưu hiệu suất làm việc</p>
+                            <div className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                <p className="mb-2">Thiết kế và vận hành quy trình làm việc tích hợp AI bằng make2u và Gemini API.</p>
+                                <ul className="space-y-1">
+                                    <li>- Xây dựng workflow AI end-to-end</li>
+                                    <li>- Ứng dụng prompt engineering theo hướng chiến lược và system-thinking</li>
+                                    <li>- Cá nhân hoá AI theo mục tiêu học tập và dự án</li>
+                                    <li>- Thiết kế logic tương tác người – AI để tối ưu hiệu suất làm việc</li>
+                                </ul>
+                            </div>
                         </div>
                     </motion.div>
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full lg:col-span-1 md:col-span-2 hover:-translate-y-2 duration-300">
@@ -74,10 +82,14 @@ export default function Experience() {
                                 <span className="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">Growth</span>
                             </div>
                             <h3 className="text-xl font-bold text-[#0d131c] dark:text-white mb-2 group-hover:text-google-red transition-colors">AI for Business Growth</h3>
-                            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-line">Triển khai Google AI vào dự án kinh doanh gia đình, tập trung vào tăng trưởng organic và tối ưu nội dung. Kết quả đo lường được:
-                                – 10,000+ organic reach
-                                – 7,200 lượt xem mỗi tháng
-                                – 300+ tương tác tự nhiên</p>
+                            <div className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                                <p className="mb-2">Triển khai Google AI vào dự án kinh doanh gia đình, tập trung vào tăng trưởng organic và tối ưu nội dung. Kết quả đo lường được:</p>
+                                <ul className="space-y-1">
+                                    <li>- 10,000+ organic reach</li>
+                                    <li>- 7,200 lượt xem mỗi tháng</li>
+                                    <li>- 300+ tương tác tự nhiên</li>
+                                </ul>
+                            </div>
                         </div>
                     </motion.div>
                 </motion.div>
