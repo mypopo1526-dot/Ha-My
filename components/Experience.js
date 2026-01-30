@@ -32,9 +32,8 @@ export default function Experience() {
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                 >
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
-                        <div className="h-48 rounded-xl bg-gradient-to-br from-blue-100 to-indigo-50 dark:from-blue-900/40 dark:to-indigo-900/40 mb-6 flex items-center justify-center overflow-hidden relative">
-                            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#4285F4 1px, transparent 1px)", backgroundSize: "16px 16px" }}></div>
-                            <span className="material-symbols-outlined text-6xl text-google-blue group-hover:rotate-12 transition-transform duration-500">auto_awesome</span>
+                        <div className="h-48 rounded-xl bg-slate-100 dark:bg-slate-800 mb-6 flex items-center justify-center overflow-hidden relative">
+                            <img src="/ecosystem-image.png" alt="AI Ecosystem" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-3">
