@@ -14,7 +14,7 @@ export default function About() {
                         className="w-40 h-40 md:w-48 md:h-48 shrink-0 relative"
                     >
                         <div className="absolute inset-0 bg-google-blue/10 rounded-full transform translate-x-2 translate-y-2"></div>
-                        <div className="w-full h-full rounded-full bg-cover bg-center border-4 border-white shadow-lg relative z-10" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQUo_xf9O82wqNvA6A-hKWUGbAGbMExNYYt5ncV8mPwaB2TBZYDahMXXAtUeeBD5-Q7GQZj83ZP_afmVqbQNwuJI7kx50Hoad7AnsSstuyEfoDJhwAwqqBD0q8EKto5hc4yUHJZaxkgKvcufikfFmLijY1vpNQDwpFitN-E1u1PVx-RxFvd_1Mlu1CTD7qZ2EwzmTJ05LrjOK7PUhckIGtt8vlLmG052cicXnJ00B4UfIyXb57S1PIM0gfAF7iGZWcwKujENWBumuX')" }}>
+                        <div className="w-full h-full rounded-full bg-cover bg-center border-4 border-white shadow-lg relative z-10" style={{ backgroundImage: "url('/about.jpg')" }}>
                         </div>
                     </motion.div>
                     <motion.div
