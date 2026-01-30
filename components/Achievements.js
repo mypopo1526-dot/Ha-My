@@ -35,32 +35,32 @@ export default function Achievements() {
                     className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-1.jpg?v=2')" }}>
+                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-1.jpg?v=3')" }}>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         </div>
-                        <div className="p-8 flex flex-col h-full">
-                            <div className="text-google-yellow font-black text-2xl mb-3">01</div>
-                            <h3 className="font-bold text-lg leading-snug group-hover:text-google-blue transition-colors">Top 15 Business Development – Heading For The Future (2025) | Leader</h3>
+                        <div className="p-6 flex flex-col flex-grow">
+                            <div className="text-google-yellow font-black text-2xl mb-2">01</div>
+                            <h3 className="font-bold text-base leading-snug group-hover:text-google-blue transition-colors">Top 15 Business Development – Heading For The Future (2025) | Leader</h3>
                         </div>
                     </motion.div>
 
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-2.jpg?v=2')" }}>
+                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-2.jpg?v=3')" }}>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         </div>
-                        <div className="p-8 flex flex-col h-full">
-                            <div className="text-google-yellow font-black text-2xl mb-3">02</div>
-                            <h3 className="font-bold text-lg leading-snug group-hover:text-google-blue transition-colors">Quán quân Giải pháp Doanh nghiệp (2024) | Leader</h3>
+                        <div className="p-6 flex flex-col flex-grow">
+                            <div className="text-google-yellow font-black text-2xl mb-2">02</div>
+                            <h3 className="font-bold text-base leading-snug group-hover:text-google-blue transition-colors">Quán quân Giải pháp Doanh nghiệp (2024) | Leader</h3>
                         </div>
                     </motion.div>
 
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-3.jpg?v=2')" }}>
+                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-3.jpg?v=3')" }}>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         </div>
-                        <div className="p-8 flex flex-col h-full">
-                            <div className="text-google-yellow font-black text-2xl mb-3">03</div>
-                            <h3 className="font-bold text-lg leading-snug group-hover:text-google-blue transition-colors">Top 12 VSIC – Thử thách Sáng tạo Xã hội (2024) | R&D dự án BookMate</h3>
+                        <div className="p-6 flex flex-col flex-grow">
+                            <div className="text-google-yellow font-black text-2xl mb-2">03</div>
+                            <h3 className="font-bold text-base leading-snug group-hover:text-google-blue transition-colors">Top 12 VSIC – Thử thách Sáng tạo Xã hội (2024) | R&D dự án BookMate</h3>
                         </div>
                     </motion.div>
                 </motion.div>
