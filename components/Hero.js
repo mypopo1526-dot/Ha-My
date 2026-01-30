@@ -68,7 +68,7 @@ export default function Hero() {
                             className="absolute -bottom-4 -left-4 w-20 h-20 bg-google-green rounded-full mix-blend-multiply filter blur-xl opacity-70"
                         />
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-tr from-google-blue/20 to-google-red/20 rounded-full"></div>
-                        <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-3 hover:rotate-0 transition-transform duration-500 bg-gray-200 bg-cover bg-top" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBr6KUiOW7dQ9avWductRMO5xZ93fC6Zxs9-bk85jOG1b2zw5aGoKTqmgBzXW0Njb8XGnXPtBOoa_Tjp8lpcSWEm0SQCU5luTzDM96g19neQDBcOA9hFWmo88AkSMYF2YPL-XteVMlEX1Of49X1-MBq56W9lBkOGZjCb8upDJxo4shJ48foH0ZtJGBPkl0Y13A1VGnl0DOVOc8TRh7M5O7N4T6xYmoo55GAuP4Vb9QmwVK6mincYB1Mi6S8j2dGXNWR9Vw7GZ42cELh')" }}>
+                        <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-3 hover:rotate-0 transition-transform duration-500 bg-gray-200 bg-cover bg-top" style={{ backgroundImage: "url('/hero.jpg')" }}>
                         </div>
                     </div>
                     <div className="text-center">
