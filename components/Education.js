@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 
 export default function Education() {
+    const [popupImage, setPopupImage] = React.useState(null);
+
     return (
         <section className="w-full max-w-[960px] mx-auto px-4 md:px-10 py-16 scroll-mt-20" id="education">
             <div className="flex items-center gap-3 mb-10">
@@ -31,7 +33,10 @@ export default function Education() {
                         <p className="text-slate-500 dark:text-slate-400 font-medium">Hà Nội</p>
                         <p className="text-slate-600 dark:text-slate-300 mt-2 text-sm leading-relaxed">NEU là môi trường nền tảng hình thành tư duy học thuật và định hướng phát triển. Những trải nghiệm học tập và hoạt động sinh viên tại đây đã mở rộng kết nối, đồng thời nuôi dưỡng tinh thần tạo giá trị cho cộng đồng sinh viên.</p>
                     </motion.div>
-                    <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-800 border-4 border-google-blue flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition-transform">
+                    <div
+                        onClick={() => setPopupImage('/neu.jpg')}
+                        className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-800 border-4 border-google-blue flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition-transform cursor-pointer hover:bg-blue-50"
+                    >
                         <span className="material-symbols-outlined text-google-blue text-sm">north</span>
                     </div>
                     <div className="md:w-[45%] hidden md:block"></div>
@@ -39,7 +44,10 @@ export default function Education() {
 
                 <div className="relative flex flex-col md:flex-row items-center justify-between group">
                     <div className="md:w-[45%] hidden md:block"></div>
-                    <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-800 border-4 border-google-green flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition-transform">
+                    <div
+                        onClick={() => setPopupImage('/ueh.jpg')}
+                        className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-800 border-4 border-google-green flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition-transform cursor-pointer hover:bg-green-50"
+                    >
                         <span className="material-symbols-outlined text-google-green text-sm">south</span>
                     </div>
                     <motion.div
@@ -55,6 +63,31 @@ export default function Education() {
                     </motion.div>
                 </div>
             </div>
+
+            {/* Image Modal */}
+            {popupImage && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+                    onClick={() => setPopupImage(null)}
+                >
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.9 }}
+                        className="relative max-w-4xl max-h-[90vh] rounded-2xl overflow-hidden"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <img src={popupImage} alt="Education Detail" className="w-full h-full object-contain" />
+                        <button
+                            onClick={() => setPopupImage(null)}
+                            className="absolute top-4 right-4 w-10 h-10 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full flex items-center justify-center text-white transition-colors"
+                        >
+                            <span className="material-symbols-outlined">close</span>
+                        </button>
+                    </motion.div>
+                </div>
+            )}
+
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
