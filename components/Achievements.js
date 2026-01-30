@@ -35,7 +35,7 @@ export default function Achievements() {
                     className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
                     <motion.div variants={item} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:bg-white/10 transition-all duration-300 flex flex-col group hover:-translate-y-2">
-                        <div className="w-full h-48 bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-1.jpg?v=2')" }}>
+                        <div className="w-full aspect-square bg-slate-800 flex items-center justify-center text-slate-600 shrink-0 relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/achievement-1.jpg?v=2')" }}>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         </div>
                         <div className="p-8 flex flex-col h-full">
