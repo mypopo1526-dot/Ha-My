@@ -52,9 +52,8 @@ export default function Experience() {
                         </div>
                     </motion.div>
                     <motion.div variants={item} className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm hover:shadow-card transition-shadow border border-slate-100 dark:border-slate-800 flex flex-col h-full hover:-translate-y-2 duration-300">
-                        <div className="h-48 rounded-xl bg-gradient-to-br from-purple-100 to-fuchsia-50 dark:from-purple-900/40 dark:to-fuchsia-900/40 mb-6 flex items-center justify-center overflow-hidden relative">
-                            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#A142F4 1px, transparent 1px)", backgroundSize: "16px 16px" }}></div>
-                            <span className="material-symbols-outlined text-6xl text-purple-600 group-hover:scale-110 transition-transform duration-500">code_blocks</span>
+                        <div className="h-48 rounded-xl bg-slate-100 dark:bg-slate-800 mb-6 flex items-center justify-center overflow-hidden relative">
+                            <img src="/workflow-image.png" alt="AI Workflow Design" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-3">
